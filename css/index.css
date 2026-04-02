@@ -1,0 +1,254 @@
+.main-content {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/main-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    height: 500px;
+    width: 100%;
+    padding: 0 60px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .main-content {
+        background-position: center;
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    color: white;
+    max-width: 550px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    border-radius: 15px;
+    padding: 20px 20px;
+}
+
+.hero-text h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.hero-text p {
+    font-size: 0.85em;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+
+    background-color: #2a7ab0;
+    color: white;
+    
+
+    padding: 12px 24px;
+    border-radius: 6px;
+
+    text-decoration: none;;
+    font-weight: bold;
+    font-size: 0.8em;
+    transition: color 750ms ease, background-color 750ms ease;
+}
+
+.btn:hover {
+    background-color: #1f5f8a;
+}
+
+.btn:active{
+    background-color: #143e5a;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    line-height: 20px;
+    margin-left: 60px;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.project-card{
+    width: 300px;
+    margin-top: 40px;
+    padding: 0 20px ;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.dev {
+    display: inline-block;
+    font-size: 0.75em;
+    background-color: #ddd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.project-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #24292f;
+    color: #fff;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 0.95em;
+    transition: color 200ms ease, background-color 200ms ease;
+}
+
+.project-btn:hover {
+    background-color: #00b3ff;
+}
+
+.project-btn:active{
+    background-color: #006089;
+}
+
+.project-actions {
+    margin-top: 14px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.project-btn svg {
+    flex-shrink: 0;
+}
+
+.section-description {
+    width: 100%;
+    margin: 8px 0 0;
+    color: #4b5563;
+    font-size: 1.05rem;
+}
+
+h2 {
+    border-bottom: 2px solid #2a7ab0;
+    padding-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    width: 100%;
+    padding-top: 32px;
+    border-top: 1px solid #ddd;
+    margin-top: 18px;
+}
+
+.skill-card {
+    width: 140px;
+    min-height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover {
+    box-shadow: 0 16px 34px rgba(15, 23, 42, 0.12);
+    border-color: #cbd5e1;
+}
+
+.skill-card h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #1f2937;
+}
+
+.material-symbols-outlined.skill-icon {
+    font-size: 54px;
+    line-height: 1;
+    font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+}
+
+.html-icon {
+    color: #e44d26;
+}
+
+.css-icon {
+    color: #2563eb;
+}
+
+.js-icon {
+    color: #d4a300;
+}
+
+.react-icon {
+    color: #06b6d4;
+}
+
+.node-icon {
+    color: #2f855a;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .projects {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 132px;
+        min-height: 124px;
+    }
+}
